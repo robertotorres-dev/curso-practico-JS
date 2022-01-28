@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Porcentajes y descuentos | CETHERDEV</title>
+  </head>
+  <body>
+    <header>
+      <h1>Porcentajes y descuentos</h1>
+    </header>
+
+    <section>
+      <form action="">
+        <label for="inputPrecio">Precio Original</label>
+        <input id="inputPrecio" type="number" />
+        <label for="inputDescuento">Descuento</label>
+        <select name="" id="selectCupones">
+          <option value="">Selecciona un cupón</option>
+          <option value="1">Bronce</option>
+          <option value="2">Plata</option>
+          <option value="3">Oro</option>
+        </select>
+        <button
+          type="button"
+          onclick="botonPrecioFinal()"
+          class="primary-button"
+        >
+          Calcular precio
+        </button>
+        <p>El precio a pagar es:</p>
+        <p id="precioConDescuento"></p>
+      </form>
+    </section>
+    <script src="./descuentos.js"></script>
+  </body>
+</html>
